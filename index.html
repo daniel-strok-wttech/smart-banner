@@ -24,18 +24,19 @@
 <p>My first paragraph 2.</p>
 
 <script>
-    let output = ""
+    // let output = ""
     navigator.getInstalledRelatedApps().then(relatedApps => {
-      for (let app of relatedApps) {
-        output += app.platform + ";"
-        output += app.url + ";"
-        output += app.id + "###"
-        console.log(app.platform);
-        console.log(app.url);
-        console.log(app.id);
-      }
-      document.querySelector(".header").innerText = output
-      alert(output)
+      console.log('relatedApps: ', relatedApps);
+    //   for (let app of relatedApps) {
+    //     output += app.platform + ";"
+    //     output += app.url + ";"
+    //     output += app.id + "###"
+    //     console.log(app.platform);
+    //     console.log(app.url);
+    //     console.log(app.id);
+    //   }
+    //   document.querySelector(".header").innerText = output
+    //   alert(output)
     });
 </script>
 
